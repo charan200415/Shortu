@@ -17,7 +17,7 @@ def profile():
 
 @app.route("/test")  # now the subdomain will be passed into the parameter 'username'
 def test():
-    return "Hello Test Passed !"
+    return "Hello Test Passed !"+str(flask.request.url)
 @app.route("/<xx>")  # now the subdomain will be passed into the parameter 'username'
 def xx(xx):
     return xx
